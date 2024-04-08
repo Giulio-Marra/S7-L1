@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Pet Form</h2>
+    <form id="petForm">
+      <label for="petName">Pet Name:</label>
+      <input type="text" id="petName" name="petName" />
+
+      <label for="ownerName">Owner Name:</label>
+      <input type="text" id="ownerName" name="ownerName" />
+
+      <label for="species">Species:</label>
+      <select id="species" name="species">
+        <option value="">Select Species</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="rabbit">Rabbit</option>
+      </select>
+
+      <label for="breed">Breed:</label>
+      <select id="breed" name="breed">
+        <option value="">Select Breed</option>
+
+        <optgroup label="Dog Breeds">
+          <option value="labrador">Labrador</option>
+          <option value="poodle">Poodle</option>
+          <option value="bulldog">Bulldog</option>
+        </optgroup>
+
+        <optgroup label="Cat Breeds">
+          <option value="persian">Persian</option>
+          <option value="siamese">Siamese</option>
+          <option value="maine_coon">Maine Coon</option>
+        </optgroup>
+
+        <optgroup label="Rabbit Breeds">
+          <option value="dutch">Dutch</option>
+          <option value="lop">Lop</option>
+        </optgroup>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Pet List</h2>
+    <div id="petList"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
